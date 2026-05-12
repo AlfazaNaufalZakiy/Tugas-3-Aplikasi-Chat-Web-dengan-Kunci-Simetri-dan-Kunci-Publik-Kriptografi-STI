@@ -51,8 +51,22 @@ Dependensi utama frontend terdapat pada `frontend/package.json`, sedangkan depen
 - GCC 64-bit untuk menjalankan dependency SQLite berbasis CGO
 - Browser modern yang mendukung Web Crypto AP
 
-### Instalasi Dependensi
-TBD
+## Instalasi Dependensi
+### Frontend
+Masuk ke folder frontend, lalu install dependensi Node.js menggunakan npm. Dependensi yang digunakan sudah didefinisikan pada `frontend/package.json`.
+```bash
+cd frontend
+npm install
+```
+
+### Backend
+Masuk ke folder backend, lalu rapikan dan unduh dependensi Go module. Dependensi backend sudah didefinisikan pada `backend/go.mod`.
+```bash
+cd backend
+go mod tidy
+```
+
+Karena backend menggunakan SQLite melalui `github.com/mattn/go-sqlite3`, sistem perlu memiliki compiler C 64-bit yang dapat digunakan oleh CGO. Pada Windows, compiler dapat disediakan melalui MSYS2 UCRT64.
 
 ## Tata cara menjalankan program
 ### Backend
