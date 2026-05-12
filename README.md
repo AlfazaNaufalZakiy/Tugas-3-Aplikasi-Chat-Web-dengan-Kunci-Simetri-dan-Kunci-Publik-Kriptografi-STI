@@ -28,7 +28,47 @@ TBD
 TBD
 
 ## Tata cara menjalankan program
-TBD
+### Backend
+
+```bash
+cd backend
+go mod tidy
+go run main.go
+```
+
+Backend berjalan pada:
+
+```text
+http://localhost:3000
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend Vite biasanya berjalan pada:
+
+```text
+http://localhost:5173
+```
+
+### Verifikasi Build
+
+Perintah verifikasi:
+
+```bash
+cd frontend
+npm run build
+```
+
+```bash
+cd backend
+go test ./...
+```
 
 ## *Environment/configuration*
 TBD
