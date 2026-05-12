@@ -91,7 +91,7 @@ npm install
 npm run dev
 ```
 
-Frontend Vite biasanya berjalan pada:
+Frontend Vite berjalan pada:
 
 ```text
 http://localhost:5173
@@ -112,7 +112,22 @@ go test ./...
 ```
 
 ## *Environment/configuration*
-TBD
+Aplikasi menggunakan konfigurasi lokal sebagai berikut:
+| Komponen | Konfigurasi |
+| --- | --- |
+| Backend URL | `http://localhost:3000` |
+| Frontend URL | `http://localhost:5173` |
+| Database | SQLite lokal |
+| File database | `backend/chat.db` |
+| API base URL frontend | `http://localhost:3000` |
+| JWT issuer | `ii4021-tugas-3` |
+| JWT audience | `secure-chat` |
+| Algoritma JWT | ECDSA ES256 |
+| Kurva ECDH client | P-256 |
+| Enkripsi pesan | AES-256-GCM |
+| Derivasi kunci pesan | HKDF SHA-256 |
+| MAC pesan | HMAC-SHA-256 |
+| Derivasi kunci private key | PBKDF2 SHA-256 |
 
 ## Struktur Folder
 TBD
