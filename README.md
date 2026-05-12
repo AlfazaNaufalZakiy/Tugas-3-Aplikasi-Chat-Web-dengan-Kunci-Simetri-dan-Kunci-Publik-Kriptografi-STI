@@ -130,4 +130,52 @@ Aplikasi menggunakan konfigurasi lokal sebagai berikut:
 | Derivasi kunci private key | PBKDF2 SHA-256 |
 
 ## Struktur Folder
-TBD
+```Berikut adalah struktur utama folder pada proyek ini:
+Tugas-3-Aplikasi-Chat-Web-dengan-Kunci-Simetri-dan-Kunci-Publik-Kriptografi-STI
+├── backend
+│   ├── go.mod
+│   ├── go.sum
+│   ├── main.go
+│   ├── internal
+│   │   ├── authkeys
+│   │   │   └── keys.go
+│   │   ├── database
+│   │   │   └── db.go
+│   │   ├── handlers
+│   │   │   ├── auth.go
+│   │   │   ├── chat.go
+│   │   │   └── contacts.go
+│   │   ├── middleware
+│   │   │   └── auth.go
+│   │   └── models
+│   │       └── models.go
+│   └── pkg
+│       └── jwtlib
+│           └── jwt.go
+├── frontend
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.ts
+│   ├── tsconfig.json
+│   ├── index.html
+│   ├── public
+│   └── src
+│       ├── App.tsx
+│       ├── main.tsx
+│       ├── utils
+│       │   ├── api.ts
+│       │   └── crypto.ts
+│       ├── components
+│       │   ├── Auth
+│       │   ├── Chat
+│       │   └── Sidebar
+│       ├── theme
+│       │   └── colors.ts
+│       ├── types
+│       │   └── index.ts
+│       └── data
+│           └── mock.ts
+├── package.json
+├── package-lock.json
+└── README.md
+```
