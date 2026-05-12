@@ -26,7 +26,30 @@ Setelah login berhasil, backend menerbitkan JWT dalam format JWS yang ditandatan
 Dependensi utama frontend terdapat pada `frontend/package.json`, sedangkan dependensi backend terdapat pada `backend/go.mod`.
 
 ## Dependensi
-TBD
+### Frontend
+- React
+- React DOM
+- TypeScript
+- Vite
+- Axios
+- Lucide React
+- React Router DOM
+- Web Crypto API
+
+### Backend
+- Go
+- Fiber
+- SQLite
+- go-sqlite3
+- bcrypt dari `golang.org/x/crypto`
+- Library JWT lokal pada `backend/pkg/jwtlib`
+- Package kriptografi bawaan Go seperti `crypto/ecdsa`, `crypto/x509`, dan `crypto/rand`
+
+### Kebutuhan Sistem
+- Node.js dan npm
+- Go
+- GCC 64-bit untuk menjalankan dependency SQLite berbasis CGO
+- Browser modern yang mendukung Web Crypto AP
 
 ### Instalasi Dependensi
 TBD
