@@ -9,7 +9,17 @@
 TBD
 
 ## Teknologi yang Digunakan (*tech stack*)
-TBD
+| Komponen | Teknologi |
+| --- | --- |
+| Frontend | React, TypeScript, Vite |
+| Backend | Go, Fiber |
+| Database | SQLite |
+| HTTP Client | Axios |
+| Kriptografi sisi klien | Web Crypto API |
+| Hash password | bcrypt dengan salt unik |
+| JWT backend | Library lokal pada `backend/pkg/jwtlib` dan ECDSA ES256 |
+
+Dependensi utama frontend terdapat pada `frontend/package.json`, sedangkan dependensi backend terdapat pada `backend/go.mod`.
 
 ## Dependensi
 TBD
